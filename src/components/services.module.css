@@ -1,3 +1,51 @@
 .services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f5f8;
+  gap: 30px;
+  padding: 100px 0;
+}
+
+.info:hover {
+  background-color: #2caeba;
+  color: #bff8fd;
+  transition: linear 0.3s;
+}
+
+.info:hover .underline {
+  background-color: #bff8fd;
+  transition: linear 0.3s;
+}
+.info:hover .title {
+  color: #bff8fd;
+  transition: linear 0.3s;
+}
+
+.info {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.text {
+  margin: 10px;
+  text-align: center;
+}
+
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #2caeba;
+  border: none;
+  box-shadow: none;
+  margin-top: -10px;
 }

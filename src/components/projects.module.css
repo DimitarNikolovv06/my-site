@@ -1,0 +1,7 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 100vh;
+}

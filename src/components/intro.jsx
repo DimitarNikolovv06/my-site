@@ -11,10 +11,10 @@ const Intro = () => {
       <h3>Web developer from Plovdiv</h3>
       <Link className={styles.contact}>Contact me</Link>
       <div>
-        <Link className={styles.socialLink}>
+        <Link to="https://Facebook.com" className={styles.socialLink}>
           <FaFacebookSquare />
         </Link>
-        <Link className={styles.socialLink}>
+        <Link to="https://Github.com" className={styles.socialLink}>
           <FaGithubSquare />
         </Link>
       </div>
