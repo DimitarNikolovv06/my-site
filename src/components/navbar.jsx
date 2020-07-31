@@ -12,9 +12,9 @@ export default function Navbar() {
           style={{ padding: "20px" }}
           className="menu"
         >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+          <div className="line" />
+          <div className="line" />
+          <div className="line" />
         </div>
       </div>
       <NavLinks open={open} />

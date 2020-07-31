@@ -1,7 +1,86 @@
 .projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-well);
+  padding-top: 60px;
+  /* height: 100vh; */
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #ffffff;
-  height: 100vh;
+  background-color: white;
+  width: 90%;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.card-image {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  /* height: 100px; */
+  /* height: 30px; */
+}
+
+.card-image::after {
+  content: "";
+  background: linear-gradient(to bottom right, #00b0bd, #4485ad);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-image::after {
+  transition: 0.5s linear;
+  opacity: 0;
+}
+
+.card-info {
+  word-wrap: break-word;
+  padding: 15px 15px 50px 15px;
+  overflow: hidden;
+  /* height: 200px; */
+}
+
+.skill {
+  background-color: #dae2ec;
+  color: #6189b4;
+  padding: 5px 10px;
+  margin: 15px 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.skills {
+  position: relative;
+  left: 10px;
+}
+
+.project-number {
+  color: #00b0bd;
+  margin: 8px 0px 0px 15px;
+  font-size: 1.3rem;
+}
+
+.link {
+  font-size: 2rem;
+  color: #00b0bd;
+  margin: 0 5px;
+}
+
+.link:hover {
+  color: #000000;
+}
+
+.links {
+  margin: 15px 10px 0 10px;
 }

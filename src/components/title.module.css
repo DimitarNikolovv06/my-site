@@ -1,0 +1,15 @@
+.title {
+  position: relative;
+  letter-spacing: 1;
+  font-size: 2rem;
+  display: inline;
+  padding: 10;
+  margin-left: 10px;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}

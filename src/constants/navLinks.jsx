@@ -8,7 +8,6 @@ const data = [
   { id: 2, title: "About", url: "/about" },
   { id: 3, title: "Projects", url: "/projects" },
   { id: 4, title: "Contact", url: "/contact" },
-  { id: 5, title: "Resume", url: "/" },
 ]
 
 export default function NavLinks({ open }) {
@@ -23,12 +22,12 @@ export default function NavLinks({ open }) {
       ))}
       {open ? (
         <div>
-          <Link to="https://facebook.com" className={socialLink}>
+          <a href="https://facebook.com" className={socialLink}>
             <FaFacebookSquare />
-          </Link>
-          <Link to="https:github.com" className={socialLink}>
+          </a>
+          <a href="https:github.com" className={socialLink}>
             <FaGithubSquare />
-          </Link>
+          </a>
         </div>
       ) : null}
     </ul>

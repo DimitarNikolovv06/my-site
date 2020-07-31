@@ -1,40 +1,58 @@
 .intro {
+  position: relative;
   display: flex;
-  width: 100%;
   height: 90vh;
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   padding-left: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: start;
 }
 
 .social-link {
   font-size: 2rem;
   cursor: pointer;
   margin: 0 5px;
+  color: #000000;
 }
+
+/* .social-links {
+  margin-top: 10px;
+} */
 
 .social-link:hover {
   color: #2caeba;
 }
 
 hr {
+  /* position: absolute; */
   width: 80px;
-  height: 6px;
+  height: 5px;
+  top: 20px;
   background-color: #2caeba;
   border: none;
   box-shadow: none;
+  /* gap: 0; */
 }
 
 h1 {
+  line-height: unset;
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
   font-size: 3.5rem;
+  letter-spacing: 1.5;
 }
 
 h3 {
   color: #647d98;
   font-size: 1.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .contact {
@@ -45,11 +63,13 @@ h3 {
   font-weight: 600;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  width: 200px;
+  width: 150px;
   padding: 10px 0;
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px 0;
 }
 
 .contact:hover {
@@ -57,4 +77,19 @@ h3 {
   color: #000000;
   box-shadow: none;
   transition: ease-in 0.2s;
+}
+
+.avatar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper {
+    justify-content: space-around;
+  }
 }

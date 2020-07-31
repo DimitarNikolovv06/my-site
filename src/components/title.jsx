@@ -1,27 +1,12 @@
 import React from "react"
+import styles from "./title.module.css"
 
 const Title = ({ title }) => {
   return (
-    <h2
-      style={{
-        letterSpacing: 1,
-        fontSize: "2rem",
-        textAlign: "center",
-      }}
-    >
-      {title ? title : `No Title`}
-      <hr
-        style={{
-          width: 100,
-          height: 3,
-          backgroundColor: "#2caeba",
-          border: "none",
-          boxShadow: "none",
-          margin: "auto",
-          marginTop: 10,
-        }}
-      />
-    </h2>
+    <>
+      <h2 className={styles.title}>{title ? title : `No Title`}</h2>
+      <hr className={styles.line} />
+    </>
   )
 }
 

@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import styles from "../components/contact.module.css"
 
 const Contact = () => {
   return (
     <Layout>
-      <div>contact</div>
+      <div className={styles.contactWrapper}></div>
     </Layout>
   )
 }

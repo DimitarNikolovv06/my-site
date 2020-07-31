@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   background-color: #f1f5f8;
-  gap: 30px;
   padding: 100px 0;
 }
 
@@ -38,7 +37,9 @@
 
 .text {
   margin: 10px;
+  word-wrap: break-word;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .underline {
