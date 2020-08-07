@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { FaFacebookSquare, FaGithubSquare } from "react-icons/fa"
 import { socialLink } from "../components/intro.module.css"
+import { useEffect } from "react"
 
 const data = [
   { id: 1, title: "Home", url: "/" },
@@ -11,6 +12,14 @@ const data = [
 ]
 
 export default function NavLinks({ open }) {
+  useEffect(() => {
+    open ? (document.body.style.overflow = "hidden") : console.log("test")
+
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  })
+
   return (
     <ul className={`nav-links ${open ? "open" : ""}`}>
       {data.map(link => (

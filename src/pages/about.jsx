@@ -21,21 +21,17 @@ const About = ({ data }) => {
   return (
     <Layout>
       <div className={styles.about}>
-        <div className="c-image center">
-          <div className="image ">
-            <Image fixed={data.images.nodes[0].fixed} alt="avatar" />
-          </div>
-        </div>
         <div>
-          <Title className={styles.title} title={`About me`} />
-
+          <Title className={styles.title} title={`About`} />
           <p className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            perferendis dolor in. Hic accusantium illo quas consequatur, laborum
-            odio, omnis, praesentium ipsam harum necessitatibus eius mollitia
-            animi neque? Facere ipsum quisquam hic quod necessitatibus
-            voluptatibus iusto nesciunt tempora unde non architecto autem
-            corporis cupiditate rerum, nam sed dolorem porro tempore.
+            Hello I am Dimitar, a web developer from Plovdiv.
+            <br />
+            <br />I am passionate about all things web related.I am currently
+            studying Informatics part-time at Plovdiv University “Paisii
+            Hilendarski”. I have recently finished my 2nd year of study there
+            and am currently looking for an internship to improve my skill set
+            and start off my professional career. My skills are mostly for the
+            front end however i can also do back end.
           </p>
           <p className={styles.skills}>
             {stack.map((skill, i) => (

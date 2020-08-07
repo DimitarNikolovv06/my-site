@@ -7,11 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="hamburger">
-        <div
-          onClick={() => setOpen(!open)}
-          style={{ padding: "20px" }}
-          className="menu"
-        >
+        <div onClick={() => setOpen(!open)} className="menu">
           <div className="line" />
           <div className="line" />
           <div className="line" />

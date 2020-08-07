@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--clr-well);
-  padding-top: 60px;
+  padding-top: 50px;
   /* height: 100vh; */
 }
 
@@ -12,24 +11,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
+  background: transparent;
   width: 90%;
   padding-bottom: 5px;
   border-radius: 5px;
   margin-bottom: 40px;
+  border: 2px solid var(--primary-clr1);
 }
 
 .card-image {
   position: relative;
   border-radius: 5px;
   width: 100%;
+  background: rgb(100, 255, 218);
   /* height: 100px; */
   /* height: 30px; */
 }
 
 .card-image::after {
   content: "";
-  background: linear-gradient(to bottom right, #00b0bd, #4485ad);
+  background: rgba(100, 255, 218, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +49,7 @@
   word-wrap: break-word;
   padding: 15px 15px 50px 15px;
   overflow: hidden;
-  /* height: 200px; */
+  color: white;
 }
 
 .skill {
@@ -66,21 +67,27 @@
 }
 
 .project-number {
-  color: #00b0bd;
+  color: var(--primary-clr1);
   margin: 8px 0px 0px 15px;
   font-size: 1.3rem;
 }
 
 .link {
   font-size: 2rem;
-  color: #00b0bd;
+  color: var(--primary-clr1);
   margin: 0 5px;
 }
 
 .link:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .links {
   margin: 15px 10px 0 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    max-width: 500px;
+  }
 }

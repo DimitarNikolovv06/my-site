@@ -1,3 +1,57 @@
 .contact-wrapper {
-  background-color: white;
+  display: flex;
+  height: 80vh;
+  margin: 10vh 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+  border: 2px solid var(--primary-clr1);
+  gap: 30px;
+}
+
+.label {
+  color: var(--primary-clr1);
+}
+
+.input {
+  background: transparent;
+  color: var(--primary-clr1);
+  border: none;
+  border-bottom: 2px solid var(--primary-clr1);
+  padding: 20px 5px;
+  margin: 0 20px;
+}
+
+.input:focus {
+  border-bottom: none;
+  border-radius: 10px;
+  transition: 0.1s linear;
+  box-shadow: 3px 3px var(--primary-clr1);
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+  padding: 20px 0;
+  color: white;
+  background: var(--primary-clr1);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  border: 2px solid var(--primary-clr1);
 }
