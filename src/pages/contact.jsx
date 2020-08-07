@@ -6,7 +6,13 @@ const Contact = () => {
   return (
     <Layout>
       <div className={styles.contactWrapper}>
-        <form method="POST" data-netligy="true" className={styles.form}>
+        <form
+          onSubmit={e => e.preventDefault()}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className={styles.form}
+        >
           <h3 style={{ color: "var(--primary-clr1)", margin: "20px auto" }}>
             Get In Touch
           </h3>
