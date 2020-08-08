@@ -1,7 +1,7 @@
 import React from "react"
 import { FaFacebookSquare, FaGithubSquare } from "react-icons/fa"
-import { Link } from "gatsby"
 import styles from "./intro.module.css"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Intro = () => {
   return (
@@ -10,9 +10,9 @@ const Intro = () => {
         <hr />
         <h1>I'm Dimitar</h1>
         <h3 className={styles.work}>Web developer from Plovdiv</h3>
-        <Link to="/contact" className={styles.contact}>
+        <button onClick={() => scrollTo("#contact")} className={styles.contact}>
           Contact me
-        </Link>
+        </button>
         <div className={styles.socialLinks}>
           <a href="https://Facebook.com" className={styles.socialLink}>
             <FaFacebookSquare />

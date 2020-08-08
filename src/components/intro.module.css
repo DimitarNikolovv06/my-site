@@ -52,7 +52,7 @@ h3 {
 
 .contact {
   background-color: transparent;
-  border: 2px solid rgb(100, 255, 218);
+  border: 2px solid var(--primary-clr1);
   color: white;
   display: block;
   border-radius: 10px;
@@ -68,7 +68,7 @@ h3 {
 }
 
 .contact:hover {
-  background-color: rgb(100, 255, 218);
+  background-color: var(--primary-clr1);
   color: #000000;
   box-shadow: none;
   transition: ease-in 0.2s;
@@ -76,21 +76,46 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .wrapper {
-    padding-left: 200px;
     height: 100vh;
   }
 
   .intro {
+    /* margin-right: auto; */
+    width: 100vw;
     height: 50%;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: left;
   }
 
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .work {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 5rem;
   }
 
   .work {
     font-size: 3rem;
+  }
+
+  .intro {
+    justify-content: flex-start;
+  }
+
+  .wrapper {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    padding-left: 150px;
   }
 }

@@ -3,9 +3,11 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
+import About from "../components/about"
+import Projects from "../components/projects"
 import Particles from "react-particles-js"
-
 import Services from "../components/services"
+import Contact from "../components/contact"
 
 const IndexPage = props => {
   return (
@@ -15,12 +17,11 @@ const IndexPage = props => {
           position: "absolute",
           top: 0,
           left: 0,
-          zIndex: 0,
         }}
         params={{
           particles: {
             number: {
-              value: 100,
+              value: 50,
             },
             size: {
               value: 3,
@@ -42,6 +43,9 @@ const IndexPage = props => {
       <Layout>
         <SEO title="Home" />
         <Intro />
+        <About />
+        <Projects />
+        <Contact />
       </Layout>
     </>
   )

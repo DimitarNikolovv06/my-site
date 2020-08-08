@@ -13,7 +13,7 @@ export default function Navbar() {
           <div className="line" />
         </div>
       </div>
-      <NavLinks open={open} />
+      <NavLinks open={open} setOpen={setOpen} />
     </nav>
   )
 }
