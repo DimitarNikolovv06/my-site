@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  height: 500px;
+  max-height: 1000px;
   border: 2px solid var(--primary-clr1);
   gap: 30px;
 }
@@ -27,7 +27,7 @@
   border: none;
   border-bottom: 2px solid var(--primary-clr1);
   padding: 20px 5px;
-  margin: 0 20px;
+  margin: 20px;
 }
 
 .input:focus {
@@ -37,10 +37,9 @@
 }
 
 .btn {
-  position: absolute;
-  bottom: 0;
   background-color: transparent;
   padding: 20px 0;
+  margin-top: 30px;
   color: white;
   background: var(--primary-clr1);
   border: none;
