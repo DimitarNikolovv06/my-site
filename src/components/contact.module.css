@@ -14,7 +14,7 @@
   width: 85%;
   max-height: 1000px;
   border: 2px solid var(--primary-clr1);
-  gap: 30px;
+  gap: 25px;
 }
 
 .label {
@@ -37,16 +37,17 @@
 }
 
 .btn {
+  position: relative;
   background-color: transparent;
-  padding: 20px 0;
-  margin-top: 30px;
-  color: white;
+  padding: 15px 0;
+  color: whitesmoke;
   background: var(--primary-clr1);
   border: none;
   cursor: pointer;
   width: 100%;
   font-size: 1.2rem;
   font-weight: bolder;
+  height: auto;
 }
 
 .btn:hover {
